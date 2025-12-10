@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
@@ -10,7 +23,6 @@ a:hover {
 }
 
 body {
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   background-color: #ececec;
@@ -45,6 +57,12 @@ article .profile-avatar {
 
 article .profile-name {
   margin-bottom: 1rem;
+}
+
+article .profile-title {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
 }
 
 article .profile-bio {
