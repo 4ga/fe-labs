@@ -1,3 +1,5 @@
+# P02 – Counter
+
 - [x] Counter starts at 0
 - [x] Increment increases by 1
 - [x] Decrement decreases by 1
