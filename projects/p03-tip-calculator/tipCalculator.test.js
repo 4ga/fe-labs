@@ -47,4 +47,10 @@ describe("tip calculator", () => {
       "Number of people must be greater than 0"
     );
   });
+
+  it("throws if input entered is not numeric", () => {
+    expect(() => calculateTotals("abc", 10, 5)).toThrow(
+      "All Inputs must be valid numbers"
+    );
+  });
 });

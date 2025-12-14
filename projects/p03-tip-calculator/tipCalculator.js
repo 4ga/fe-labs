@@ -12,6 +12,8 @@ export function calculateTotals(billAmount, tipPercentage, numberOfPeople) {
   if (tip < 0)
     throw new Error("Tip percentage must be greater than or equal to 0");
   if (people <= 0) throw new Error("Number of people must be greater than 0");
+  if (Number.isNaN(bill) || Number.isNaN(tip) || Number.isNaN(people))
+    throw new Error("All Inputs must be valid numbers");
 
   const totalTip = bill * (tip / 100);
   const tipAmountPerPerson = roundToTwo(totalTip / people);
