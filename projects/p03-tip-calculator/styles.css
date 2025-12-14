@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #ececec;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background: #eaf6f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  min-width: 20rem;
+  padding: 3rem 2rem;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+label {
+  text-transform: capitalize;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input[type="number"] {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+}
+
+input:focus {
+  outline: 2px solid #04aa6d;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+button {
+  background-color: #04aa6d;
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #06af71;
+}
+
+button.reset {
+  background-color: #eb511a;
+  border: 1px solid rgb(128, 38, 0);
+}
+
+button.reset:hover {
+  background-color: #f36430;
+  border: 1px solid rgb(128, 38, 0);
+}
+
+button.disabled {
+  background-color: #3f4241;
+  border: 1px solid rgb(57, 59, 57);
+}
+button.disabled:hover {
+  background-color: #3f4241;
+  border: 1px solid rgb(57, 59, 57);
+  cursor: default;
+}
+
+.btn:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.result {
+  margin: 20px 0;
+}
+
+.result div {
+  margin: 0 0 15px 0;
+}
+
+section .errors {
+  color: red;
+  max-width: 250px;
+  display: flex;
+  font-size: 1rem;
+}
